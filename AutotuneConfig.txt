@@ -1,0 +1,8 @@
+M303 E0 C8 S240
+#define DEFAULT_Kp 24.12
+#define DEFAULT_Ki 2.54
+#define DEFAULT_Kd 57.31
+M303 E-1 C8 S70
+#define DEFAULT_bedKp 180.95
+#define DEFAULT_bedKi 35.63
+#define DEFAULT_bedKd 612.71
