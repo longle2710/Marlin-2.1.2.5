@@ -1511,7 +1511,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -29, -49.5, -2.225 }
+#define NOZZLE_TO_PROBE_OFFSET { -29, -49.5, -2.1 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1571,7 +1571,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 2 //Bookmarked
+#define MULTIPLE_PROBING 3 //Bookmarked
 //#define EXTRA_PROBING    1
 
 /**
