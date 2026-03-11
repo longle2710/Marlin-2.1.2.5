@@ -1148,7 +1148,7 @@
 #define U_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define V_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define W_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -1346,12 +1346,12 @@
  * Use the nozzle as the probe, as with a conductive
  * nozzle system or a piezo-electric smart effector.
  */
-//#define NOZZLE_AS_PROBE
+#define NOZZLE_AS_PROBE
 
 /**
  * Z Servo Probe, such as an endstop switch on a rotating arm.
  */
-#define Z_PROBE_SERVO_NR 0 //Bookmarked
+//#define Z_PROBE_SERVO_NR 0 //Bookmarked
 #ifdef Z_PROBE_SERVO_NR
   //#define Z_SERVO_ANGLES { 70, 0 }      // Z Servo Deploy and Stow angles
 #endif
@@ -1359,7 +1359,7 @@
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-#define BLTOUCH //Bookmarked
+//#define BLTOUCH //Bookmarked
 
 /**
  * MagLev V4 probe by MDD
@@ -1511,7 +1511,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -29, -49.5, -2.0 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, 0, 0.1 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1588,9 +1588,9 @@
  * Example: 'M851 Z-5' with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: 'M851 Z+1' with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-#define Z_CLEARANCE_DEPLOY_PROBE   5 // (mm) Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  2// (mm) Z Clearance between probe points
-#define Z_CLEARANCE_MULTI_PROBE     1.5 // (mm) Z Clearance between multiple probes
+#define Z_CLEARANCE_DEPLOY_PROBE   2 // (mm) Z Clearance for Deploy/Stow
+#define Z_CLEARANCE_BETWEEN_PROBES  1.5// (mm) Z Clearance between probe points
+#define Z_CLEARANCE_MULTI_PROBE     1 // (mm) Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // (mm) Z position after probing is done
 
 #define Z_PROBE_LOW_POINT          -1 // (mm) Farthest distance below the trigger-point to go before stopping
