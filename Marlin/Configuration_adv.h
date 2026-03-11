@@ -1406,14 +1406,13 @@
        * Use a height slightly above the estimated nozzle-to-probe Z offset.
        * For example, with an offset of -5, consider a starting height of -4.
        */
-      #define XATC_START_Z -0.1
+      #define XATC_START_Z -0.5
       #define XATC_MAX_POINTS 5             // Number of points to probe in the wizard
       #define XATC_Y_POSITION Y_CENTER      // (mm) Y position to probe
-      #define XATC_Z_OFFSETS { 0, 0.05, 0.1, 0.15 ,0.2 }    // Z offsets for X axis sample points
+      #define XATC_Z_OFFSETS { -0.05, -0.08, -0.06, 0.05 ,0.14 }    // Z offsets for X axis sample points
     #endif
 
   #endif
-
   // Include a page of printer information in the LCD Main Menu
   //#define LCD_INFO_MENU
   #if ENABLED(LCD_INFO_MENU)
