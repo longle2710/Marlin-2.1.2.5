@@ -1409,7 +1409,8 @@
       #define XATC_START_Z -0.5
       #define XATC_MAX_POINTS 5             // Number of points to probe in the wizard
       #define XATC_Y_POSITION Y_CENTER      // (mm) Y position to probe
-      #define XATC_Z_OFFSETS { -0.05, -0.08, -0.06, 0.05 ,0.14 }    // Z offsets for X axis sample points
+      #define XATC_Z_OFFSETS { -0.1, -0.12, -0.02, 0.08 ,0.18 }    // Z offsets for X axis sample points
+      //#define XATC_Z_OFFSETS { -0.05, -0.08, -0.06, 0.05 ,0.14 }    // Z offsets for X axis sample points
     #endif
 
   #endif
@@ -1444,7 +1445,7 @@
   #endif
 
   // Scroll a longer status message into view
-  //#define STATUS_MESSAGE_SCROLLING
+  #define STATUS_MESSAGE_SCROLLING
 
   // Apply a timeout to low-priority status messages
   //#define STATUS_MESSAGE_TIMEOUT_SEC 30 // (seconds)
@@ -1639,7 +1640,7 @@
   //#define LONG_FILENAME_WRITE_SUPPORT   // Create / delete files with long filenames via M28, M30, and Binary Transfer Protocol
   //#define M20_TIMESTAMP_SUPPORT         // Include timestamps by adding the 'T' flag to M20 commands
 
-  //#define SCROLL_LONG_FILENAMES         // Scroll long filenames in the SD card menu
+  #define SCROLL_LONG_FILENAMES         // Scroll long filenames in the SD card menu
 
   //#define SD_ABORT_NO_COOLDOWN          // Leave the heaters on after Stop Print (not recommended!)
 

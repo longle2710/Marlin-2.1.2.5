@@ -1511,7 +1511,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -29, -49.5, -0.74 }
+#define NOZZLE_TO_PROBE_OFFSET { -29, -49.5, -2.425 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1961,7 +1961,7 @@
    */
   #define ENABLE_LEVELING_FADE_HEIGHT
   #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
-    #define DEFAULT_LEVELING_FADE_HEIGHT 3 // (mm) Default fade height.
+    #define DEFAULT_LEVELING_FADE_HEIGHT 0 // (mm) Default fade height.
   #endif
 
   /**
