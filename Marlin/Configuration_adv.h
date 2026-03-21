@@ -1409,7 +1409,7 @@
       #define XATC_START_Z -0.5
       #define XATC_MAX_POINTS 5             // Number of points to probe in the wizard
       #define XATC_Y_POSITION Y_CENTER      // (mm) Y position to probe
-      #define XATC_Z_OFFSETS { -0.1, -0.12, -0.02, 0.08 ,0.18 }    // Z offsets for X axis sample points
+      #define XATC_Z_OFFSETS { -0.09, -0.08, -0.03, 0.06 ,0.14 }    // Z offsets for X axis sample points
       //#define XATC_Z_OFFSETS { -0.05, -0.08, -0.06, 0.05 ,0.14 }    // Z offsets for X axis sample points
     #endif
 
